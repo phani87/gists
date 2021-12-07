@@ -3,7 +3,10 @@ set pages 100
 col owner format a35
 col object_type format a35
 col created format a40
-prompt running query in 11g
+prompt running query in
+prompt
+  select * from v$version where banner like 'Oracle%';
+prompt
 set timing on
 
 select
